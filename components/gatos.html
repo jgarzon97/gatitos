@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1362/PNG/512/artboard-10_89054.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Mundo Minino - Galeria</title>
+</head>
+
+<body>
+
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Nombre del sitio a la izquierda -->
+                <div class="flex-shrink-0">
+                    <a href="/index.html" class="text-xl font-bold text-indigo-600">
+                        Mundo Minino
+                    </a>
+                </div>
+                <!-- Menu para pantallas más grandes alineado a la derecha -->
+                <div class="hidden sm:flex sm:items-center sm:space-x-8 ml-auto">
+                    <a href="/index.html"
+                        class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                    <a href="/components/gatos.html"
+                        class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Gatitos</a>
+                    <a href="/components/adopcion.html"
+                        class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Adopción</a>
+                    <a href="/components/nosotros.html"
+                        class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
+                    <a href="/components/contacto.html"
+                        class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                </div>
+                <!-- Botón del menú móvil -->
+                <div class="flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="hidden sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <a href="#inicio"
+                    class="text-gray-700 hover:bg-indigo-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+                <a href="/components/gatos.html"
+                    class="text-gray-700 hover:bg-indigo-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gatitos</a>
+                <a href="/components/adopcion.html"
+                    class="text-gray-700 hover:bg-indigo-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Adopción</a>
+                <a href="/components/nosotros.html"
+                    class="text-gray-700 hover:bg-indigo-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Nosotros</a>
+                <a href="/components/contacto.html"
+                    class="text-gray-700 hover:bg-indigo-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="gatos" class="py-12 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Nuestros Gatitos</h2>
+                <div id="galeria-gatitos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Galeria de Gatito -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-white shadow" style="position: relative;">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="https://github.com/jgarzon97" class="text-gray-600 hover:text-indigo-600">dev: jgarzon97</a>
+            <p class="text-gray-600 text-center">&copy; 2024 Mundo Minino. Todos los derechos reservados.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-600 hover:text-indigo-600">
+                    <!-- Ícono de Facebook -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.404 24 24 23.403 24 22.667V1.333C24 .597 23.404 0 22.675 0z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600">
+                    <!-- Ícono de Twitter -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.865 9.865 0 01-3.127 1.195 4.916 4.916 0 00-8.384 4.482A13.944 13.944 0 011.671 3.149a4.916 4.916 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.918 4.918 0 004.588 3.417A9.867 9.867 0 010 19.54a13.945 13.945 0 007.548 2.212c9.057 0 14.01-7.496 14.01-13.986 0-.21-.005-.423-.014-.633A10.025 10.025 0 0024 4.557z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/navbar.js"></script>
+    <script src="/js/galeria.js"></script>
+</body>
+
+</html>
